@@ -1,0 +1,108 @@
+body
+{
+	width: 900px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: black;
+	background-repeat: repeat-x;
+}
+
+
+#en_tete
+{
+	width: 900px;
+	height: 100px;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+
+
+#menu
+{
+   float: left;
+   width: 300px;
+}
+
+.element_menu
+{
+	background-color: black;
+	background-repeat: repeat-x;
+	border: 2px solid black;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+.element_menu h3
+{    
+   color: #B3B3B3;
+   font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+   text-align: left;
+}
+
+.element_menu ul
+{
+   list-style-image: 
+   padding: 0px;
+   padding-left: 20px;
+   margin: 0px;
+   margin-bottom: 5px;
+}
+
+.element_menu a
+{
+   color: #B3B3B3;
+}
+
+.element_menu a:hover
+{
+   background-color: black;
+   color: black;
+}
+
+
+
+#corps
+{
+	margin-left: 300px;
+	margin-bottom: 20px;
+	padding: 5px;
+	color: #B3B3B3;
+	background-color: black;
+	background-repeat: repeat-x;
+	border: 2px solid black;
+}
+
+#corps h1
+{
+	color: #B3B3B3;
+	text-align: center;
+	font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+}
+
+#corps h2
+{
+	height: 30px;
+	background-image: url(images/carbonfiber.jpg);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	color: #B3B3B3;
+	text-align: center;
+}
+
+
+
+#pied_de_page
+{
+	padding: 5px;
+	clear: both;
+	text-align: center;
+	color: #B3B3B3;
+	background-color: black;
+	background-repeat: repeat-x;
+	border: 2px solid black;
+}
