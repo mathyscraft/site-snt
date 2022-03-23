@@ -45,24 +45,25 @@ header {
     display: flex;
     justify-content: left;
 }
-.navigation-bar-over {
+.navigation-left {
     display: flex;
     padding-left: 20px;
     color: #888787;
     font-family: "Lato", Arial, "Arial Black", "Times New Roman", Times, serif;
+    font-size: 13px;
 }
 #fleche {
     content: url(images/fleche.png);
-    margin-top: 29px;
-    width: 25px;
-    height: 25px;
-    padding-right: 5px;
+    margin-top: 25px;
+    width: 18px;
+    height: 18px;
+    padding-right: 4px;
 }
 
-.navigation-bar-over:hover {
+.navigation-left:hover {
     color: #bbbbbb;
 }
-.navigation-bar-over:hover > #fleche {
+.navigation-left:hover > #fleche {
     content: url(images/fleche_hover.png);
 }
 
