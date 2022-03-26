@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+html,body,header {
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+p {
+    font-family: 'Oswald','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+b {
+   font-weight: bold;
+}
+
+.head {
+    background-image: url(../imag/html_background.jpg);
+    background-repeat: none;
+    margin-top: 20px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    text-align: center;
+    color: white;
+    font-family: 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+
+    animation-duration: 3s;
+    animation-name: apparition;
+}
+@keyframes apparition {
+    from {
+        color: transparent;
+        width: 10%;
+    }
+
+    to {
+        color: white;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .head {
+        animation-duration: 2s;
+    }
+}
+
+.bloc {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
+}
+
+#pied_de_page {
+	padding: 5px;
+	clear: both;
+	text-align: center;
+	color: #B3B3B3;
+}
