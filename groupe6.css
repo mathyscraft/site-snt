@@ -49,7 +49,7 @@ header {
     display: flex;
     padding-left: 20px;
     color: #888787;
-    font-family: "Lato", Arial, "Arial Black", "Times New Roman", Times, serif;
+    font-family: "Lato", "Arial", "Times New Roman", Times, serif;
     font-size: 13px;
 }
 #fleche {
@@ -97,7 +97,36 @@ li{
 .active {
     background-color: rgb(77, 77, 77);
 }
+.navigation-icon {
+    width: 40px;
+    height: 40px;
+}
 
+@media screen and (max-width: 500px) {
+    .navigation-left {
+        font-size: 11px;
+        padding-left: 15px;
+    }
+    #fleche {
+        margin-top: 22px;
+        width: 15px;
+        height: 15px;
+        padding-right: 3px;
+    }
+    .navigation-container {
+        padding: 13px;
+    }
+    .navigation-icon {
+        width: 30px;
+        height: 30px;
+    }
+    header {
+        height: 60px;
+    }
+    nav {
+        height: 60px;
+    }
+}
 .head {
     background-image: url(images/html_background.jpg);
     background-repeat: none;
@@ -129,8 +158,7 @@ li{
     padding: 20px;
     margin: 20px;
     background-color: white;
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
     font-family: "Lato","Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
