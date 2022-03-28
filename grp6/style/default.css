@@ -64,14 +64,7 @@ b {
 }
 
 
-/* reste de la page */
-.transparent-bloc {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-}
-
+/* Definition HTML */
 .bloc {
     display: flex;
     align-items: center;
@@ -97,6 +90,25 @@ b {
         width: 150px;
         height: 100%;
     }
+}
+
+/* Le Balisage : */
+.transparent-bloc {
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+#balisage {
+    display: flex;
+}
+
+#img-balisage {
+    display: block;
+    text-align: center;
+}
+#img-balisage > p {
+    margin-top: -10px;
 }
 
 #pied_de_page {
