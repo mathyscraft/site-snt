@@ -103,6 +103,16 @@ b {
     display: flex;
 }
 
+@media screen and (max-width: 800px) {
+    #balisage {
+        display: block;
+    }
+    #img-balisage > img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
 #img-balisage {
     display: block;
     text-align: center;
