@@ -7,6 +7,11 @@ html,body,header {
     background-color: #f1f1f1;
 }
 
+h2 {
+    font-family: 'Oswald','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
 p {
     font-family: 'Oswald','Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -16,8 +21,17 @@ b {
    font-weight: bold;
 }
 
-.head {
+/* grand titre avec background */
+#head-html {
     background-image: url(../img/html_background.jpg);
+}
+
+#head-css {
+    background-image: url(../img/css_background.jpg);
+}
+
+.head {
+
     background-repeat: none;
     margin-top: 20px;
     padding-top: 150px;
@@ -49,12 +63,40 @@ b {
     }
 }
 
+
+/* reste de la page */
+.transparent-bloc {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
 .bloc {
+    display: flex;
+    align-items: center;
     padding: 20px;
     margin: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
+}
+
+#html-logo , #css-logo {
+    width: 200px;
+    height: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .bloc {
+        display: inline-block;
+    }
+    #html-logo , #css-logo {
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 100%;
+    }
 }
 
 #pied_de_page {
