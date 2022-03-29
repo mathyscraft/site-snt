@@ -103,6 +103,14 @@ b {
     display: flex;
 }
 
+#img-balisage {
+    display: block;
+    text-align: center;
+}
+#img-balisage > p {
+    margin-top: -10px;
+}
+
 @media screen and (max-width: 800px) {
     #balisage {
         display: block;
@@ -111,14 +119,6 @@ b {
         width: 80%;
         height: 80%;
     }
-}
-
-#img-balisage {
-    display: block;
-    text-align: center;
-}
-#img-balisage > p {
-    margin-top: -10px;
 }
 
 #pied_de_page {
