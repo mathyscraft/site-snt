@@ -1,0 +1,39 @@
+.footer {
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #ddd;
+    color: #4b4c4d;
+    font-family: 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.footer > ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+.footer > ul > li > a {
+    color: #4b4c4d;
+    opacity: .7;
+    font-family: 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.footer > ul > li > a:hover {
+    color: #4b4c4d;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer > ul > hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    color: #dcdcdc;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}

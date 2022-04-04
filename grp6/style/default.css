@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
 html,body,header {
     padding: 0;
     margin: 0;
     background-color: #f1f1f1;
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -17,8 +19,24 @@ p {
     font-size: 20px;
 }
 
-b {
+p > b {
    font-weight: bold;
+}
+
+p > u {
+    text-decoration: underline;
+}
+
+p > a {
+    text-decoration: none;
+    color: #0080ff;
+}
+p > a:visited {
+    color: #0080ff;
+}
+p > a:hover {
+    color: #00b4ff;
+    text-decoration: underline;
 }
 
 /* grand titre avec background */
@@ -32,7 +50,7 @@ b {
 
 .head {
 
-    background-repeat: none;
+    background-repeat: unset;
     margin-top: 20px;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -64,7 +82,7 @@ b {
 }
 
 
-/* Definition HTML */
+/* Definition HTML et CSS */
 .bloc {
     display: flex;
     align-items: center;
@@ -75,14 +93,14 @@ b {
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
 }
 
-#html-logo , #css-logo {
+#html-logo , #css-logo {    /*logo à droite de la définition du langage */
     width: 200px;
     height: 100%;
 }
 
 @media screen and (max-width: 850px) {
     .bloc {
-        display: inline-block;
+        display: block;
     }
     #html-logo , #css-logo {
         display: block;
@@ -99,11 +117,11 @@ b {
     margin: 20px;
 }
 
-#balisage {
+#balisage-schema {      /* cette classe englobe l'illutrastion et le texte à côté*/
     display: flex;
 }
 
-#img-balisage {
+#img-balisage {         /* celle-ci l'image et sa légendde */
     display: block;
     text-align: center;
 }
@@ -111,19 +129,87 @@ b {
     margin-top: -10px;
 }
 
-@media screen and (max-width: 800px) {
-    #balisage {
+@media all and (max-width: 870px) {
+    #balisage-schema {
         display: block;
     }
     #img-balisage > img {
         width: 80%;
         height: 80%;
     }
+    @media screen and (min-width: 600px) {
+        #img-balisage > img {
+            width: 60%;
+            height: 60%;
+        }
+    }
 }
 
-#pied_de_page {
-	padding: 5px;
-	clear: both;
-	text-align: center;
-	color: #B3B3B3;
+/* .border-button {
+    display: block;
+    border-color: #1b1b1b;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 6px 0;
+    background: transparent;
+    font-family: 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: black;
+
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.border-button:hover {
+    background: #1b1b1b;
+    color: #f1f1f1;
+} */
+
+@keyframes float {
+    from {
+        margin-top: 3px;
+    }
+    50% {
+        margin-top: 10px;
+    }
+    to {
+        margin-top: 3px;
+    }
+}
+
+/* Couleurs et bloc de code */
+.code {
+    background-color: #262626;
+    margin: 1px;
+    padding: 3px;
+    border-radius: 3px;
+    
+    color: white;
+	font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.html-language {
+    border-left: 8px solid #ff4800;
+}
+
+.css-language {
+    border-left: 8px solid #008cba;
+}
+
+.code .balise {
+    color: grey;
+}
+
+.code .balise-text {
+    color: dodgerblue;
+}
+
+.code .balise-attribute {
+    color: turquoise;
+}
+
+.code .balise-attribute-value {
+    color: salmon;
 }
