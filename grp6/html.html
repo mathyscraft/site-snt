@@ -67,7 +67,8 @@
             Il fonctionne à base d’une <b>structure de balisage</b> (<a href="#balisage">Voir ci-dessous</a>) 
             et permet de mettre en place le format et le contenu d’une page web (titre, paragraphe, boutons, intégration d’image,  de vidéo etc).
         </p>
-        <img id="html-logo" src="img/html-5-logo.png" alt="logo du langage HTML">
+        <button onclick="appearImg()">Afficher</button>
+        <img hidden id="html-logo" src="img/html-5-logo.png" alt="logo du langage HTML">
     </div>
 
     <div id="balisage" class="transparent-bloc">
@@ -79,11 +80,11 @@
                     Exemple de balisage HTML
                 </p>
             </div>
-            <p>
+            <p id="text-balisage">
                 Les langages de balisage fonctionnent reposent sur <b>des balises</b>, se sont des unités syntaxiques déliminant du texte pouvant être comprises par un programme informatique. <br>
                 En HTML, les balises sont caractérisées par une suite de caractères <b>encadré par les signes &lt; et &gt;</b>. Elles <b>fonctionnent par deux</b>, une balise d'ouverture et une balise de fermeture sous la forme &lt;/...&gt; <br>
                 <br><u>Par exemple :</u><br>
-                <span class="code" >
+                <span class="code" style="width: auto;" >
                     <span class="balise">&lt;</span><span class="balise-text">p</span><span class="balise">&gt;</span>
                     Ceci est un paragraphe
                     <span class="balise">&lt;/</span><span class="balise-text">p</span><span class="balise">&gt;</span>
@@ -104,7 +105,7 @@
             <p>Cette balise représente la racine d'un document HTML. Tous les autres éléments du document doivent être compris dedans.</p>
             <h3>&lt;body&gt;</h3>
             <p>L'élément body englobe du contenu principal de la page web, soit la majeure partie de celle-ci. C'est en général, la partie qui change véritablement de page en page sur un site. Remarque: il ne peut y avoir qu'une seule balise body.</p>
-            <pre class="code html-language" style="display: inline-block; padding-right: 40%;" >
+            <pre class="code html-language">
 <span class="balise">&lt;</span><span class="balise-text">html</span><span class="balise">&gt;</span>
     <span class="balise">&lt;</span><span class="balise-text">body</span><span class="balise">&gt;</span>
         ...
@@ -115,7 +116,7 @@
             <p>L'élément HTML header est utilisé pour réaliser une en-tête, généralement l'entête de la page web. Par exemple la barre de navigation de notre site est dans une balise header.</p>
             <h3>&lt;footer&gt;</h3>
             <p>L'élément footer permet de réaliser un pied de page. Génaralement, il est utilisé tout en bas de la page avec à l'interieur les droits d'auteur, les liens vers les autres pages etc.</p>
-            <pre class="code html-language" style="display: inline-block; padding-right: 20%;" >
+            <pre class="code html-language">
 <!-- /!\ATTENTION, LE CODE QUI VA SUIVRE EST TOUT BONNEMENT DEGUEULASSE /!\-->
 <span class="balise">&lt;</span><span class="balise-text">html</span><span class="balise">&gt;</span>
     <span class="balise">&lt;</span><span class="balise-text">header</span><span class="balise">&gt;</span>
