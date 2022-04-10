@@ -14,5 +14,4 @@ window.addEventListener("scroll", () => {
         sliding.classList.add("active");
         sliding = document.querySelector("#text-balisage");
     }
-    console.log(sliding);
 })
