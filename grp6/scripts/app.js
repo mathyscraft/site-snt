@@ -1,8 +1,10 @@
+
 // Animation 
 // au scroll 
 // balisage
 
 let sliding = document.querySelector("#img-balisage"); //Selectione la ligne de code avec l'id "img-balisage"
+
 
 window.addEventListener("scroll", () => {
     
@@ -14,5 +16,5 @@ window.addEventListener("scroll", () => {
         sliding.classList.add("active");
         sliding = document.querySelector("#text-balisage");
     }
-    console.log(sliding);
+ 
 })
