@@ -126,6 +126,7 @@ p > a:hover {
 #balisage-schema {      /* cette classe englobe l'illutrastion et le texte à côté*/
     display: flex;
     background: transparent;
+    overflow: hidden;
 }
 
 #img-balisage {         /* celle-ci l'image et sa légende */
