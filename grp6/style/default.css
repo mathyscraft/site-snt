@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&family=Open+Sans:wght@300&family=Source+Code+Pro:wght@300&display=swap');
 
 html,body,header {
     padding: 0;
@@ -8,6 +6,7 @@ html,body,header {
     background-color: #f1f1f1;
     scroll-behavior: smooth;
 }
+
 
 h2 {
     font-family: 'Oswald','Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -43,6 +42,10 @@ p > a:visited {
 p > a:hover {
     color: #00b4ff;
     text-decoration: underline;
+}
+
+blockquote, small {
+    margin: 0;
 }
 
 /* grand titre avec background */
@@ -167,6 +170,9 @@ p > a:hover {
         width: 80%;
         height: 80%;
     }
+    #text-balisage {
+        transition: 1s ease-out 0s;
+    }
     @media screen and (min-width: 600px) {
         #img-balisage > img {
             width: 60%;
@@ -251,4 +257,33 @@ p > a:hover {
 
 .code .balise-attribute-value {
     color: salmon;
+}
+
+.quotes {
+    margin: 30px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.quotes  img {
+    padding: 40px 0;
+}
+
+blockquote {
+    text-align: center;
+    margin: 0 20px;
+    font-family: 'Dancing Script', 'Lato', Arial, cursive;
+    font-size: 25px;
+}
+
+blockquote > p {
+    margin: 0;
+    text-align: right;
+    font-family: 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+blockquote > small {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
