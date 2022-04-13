@@ -154,7 +154,7 @@ blockquote, small {
     position: relative;
     right: -100%;
     opacity: 0;
-    transition: 1s ease-out 1s;
+    transition: 500ms ease-out 1s;
     background: transparent;
 }
 #text-balisage.active {
@@ -171,7 +171,7 @@ blockquote, small {
         height: 80%;
     }
     #text-balisage {
-        transition: 1s ease-out 0s;
+        transition: 500ms ease-out 0s;
     }
     @media screen and (min-width: 600px) {
         #img-balisage > img {
