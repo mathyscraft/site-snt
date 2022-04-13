@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&family=Open+Sans:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Source+Code+Pro:wght@300&display=swap');
 
 html,body,header {
     padding: 0;
@@ -102,7 +102,7 @@ blockquote, small {
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
 }
 
-#html-logo , #css-logo {    /*logo à droite de la définition du langage */
+.bloc img{    /*logo à droite de la définition du langage */
     width: 200px;
     height: 100%;
 }
@@ -111,7 +111,7 @@ blockquote, small {
     .bloc {
         display: block;
     }
-    #html-logo , #css-logo {
+    .bloc img {
         display: block;
         margin: auto;
         width: 150px;
@@ -120,7 +120,7 @@ blockquote, small {
 }
 
 /* Le Balisage : */
-.transparent-bloc {
+#balisage {
     align-items: center;
     padding: 20px;
     margin: 20px;
@@ -267,6 +267,7 @@ blockquote, small {
 
 .quotes  img {
     padding: 40px 0;
+    cursor: pointer;
 }
 
 blockquote {
@@ -286,4 +287,34 @@ blockquote > p {
 blockquote > small {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+}
+
+#hyperlink-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#hyperlink-video img {
+    margin-left: 80px;
+    width: 200px;
+    height: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    #hyperlink-video {
+        display: block;
+    }
+    #hyperlink-video img {
+        display: block;
+        margin: auto;
+        width: 150px;
+        height: 100%;
+    }
+    #hyperlink-video iframe {
+        margin: auto;
+        width: 70%
+    }
 }
