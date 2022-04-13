@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style/footer.css" />
     <title>Hypertexte</title>
     <link rel="icon" type="image/png" href="img/hyperlink.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&family=Open+Sans:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet"> 
+
+    <!-- Les fichiers javaScript : -->
+    <script defer src="./scripts/quotes.js"></script>
 </head>
 
 <body>
@@ -43,12 +49,34 @@
         </div>
         
     </header>
+    <section>
+    <div class="quotes">
+        <img id="switch-btn" src="./img/chevron-gauche.png" height="32px">
+        <blockquote id="quote1">
+            « L’hypertexte est un moyen de lier des informations de diverses natures et d’y accéder, 
+            comme un réseau de nœuds dans lequel l’utilisateur peut naviguer à volonté. »
+            <p>Tim Berners-Lee, inventeur de l'Hypertexte</p>
+            <small>1/2</small>
+        </blockquote>
+        <blockquote id="quote2">
+            « L’hypertexte est du texte qui ne se limite pas à être linéaire. […] 
+            L’hypertexte est du texte qui contient des liens vers d’autres textes. 
+            Le terme a été inventé par Ted Nelson vers 1965. »
+            <p>Tim Berners-Lee, inventeur de l'Hypertexte</p>
+            <small>2/2</small>
+        </blockquote>
+        <img id="switch-btn2" src="./img/chevron-droit.png" height="32px">
+    </div>
+    </section>
     <footer class="footer">
         <ul>
             <hr>
             <li><a href="html.html">HTML</a></li>
             <li><a href="css.html">CSS</a></li>
             <li><a href="#">Hypertexte</a></li>
+            <hr>
+            Icones :
+            <li><a href="https://www.flaticon.com/fr/icones-gratuites/chevron" title="chevron icônes">Chevron icônes créées par feen - Flaticon</a></li>
             <hr>
             <li class="copyright">Made by Thomas G. & Mathys T-S</li>
             <li class="copyright">&copy; 2022</li>
