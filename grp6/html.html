@@ -107,7 +107,11 @@
             <h3>&lt;head&gt;</h3>
             <p>Cette balise représente les données générales du site comme son titre ou encore le lien vers d'autres pages de code (comme par exemple vers une page de css pour la mise en forme)</p>
             <pre class="code html-language">
-<span class="balise">&lt;</span><span class="balise-text">html</span><span class="balise">&gt;</span>
+<span class="balise">&lt;</span><span class="balise-text">html</span><span class="balise">&gt;</span>  
+    <span class="balise">&lt;</span><span class="balise-text">head</span><span class="balise">&gt;</span>
+        <span class="comment">&lt;!-- Permet de donner un titre à la page --&gt;</span>
+        <span class="balise">&lt;</span><span class="balise-text">title</span><span class="balise">&gt;</span>Accueil<span class="balise">&lt;/</span><span class="balise-text">title</span><span class="balise">&gt;</span>
+    <span class="balise">&lt;/</span><span class="balise-text">head</span><span class="balise">&gt;</span>
     <span class="balise">&lt;</span><span class="balise-text">body</span><span class="balise">&gt;</span>
         ...
     <span class="balise">&lt;/</span><span class="balise-text">body</span><span class="balise">&gt;</span>
@@ -115,20 +119,17 @@
             </pre><br>
             <h3>&lt;header&gt;</h3>
             <p>L'élément HTML header est utilisé pour réaliser une en-tête, généralement l'entête de la page web. Par exemple la barre de navigation de notre site est dans une balise header.</p>
-            <h3>&lt;nav&gt;</h3>
-            <p>il s'agit d'une section destinée à la navigation dans un document,autrement dit une section comportant des liens de tout type</p>
-            <h3>&lt;div&gt;</h3>
-            <p>div est une balise conteneur général de flux,autrement dit il est semblable à header et footer à l'exception du fait que div peut être utilisé nimporte où dans le code sans que cela modifie un paramètre d'affichage.On utilise souvent div également pour sa simplicité pour ajouter un attribut class ou id que l'on pourra ajuster dans le css.</p>
             <h3>&lt;footer&gt;</h3>
             <p>L'élément footer permet de réaliser un pied de page. Génaralement, il est utilisé tout en bas de la page avec à l'interieur les droits d'auteur, les liens vers les autres pages etc.</p>
-            <h3>&lt;a&gt;</h3>
-            <p>la balise a sert à insérer un lien</p>
+            <h3>&lt;nav&gt;</h3>
+            <p>Il s'agit d'une section destinée à la navigation dans un document, autrement dit une section comportant des génralement des liens sous la forme d'une liste.</p>
+            <h3>&lt;div&gt;</h3>
+            <p>Div est une balise conteneur général de flux, autrement dit il est semblable à header et footer à l'exception du fait que div peut être utilisé nimporte où dans le code sans que cela modifie un paramètre d'affichage. On utilise souvent div également pour sa simplicité pour ajouter un attribut class ou id que l'on pourra ajuster dans le css.</p>
             <h3>&lt;p&gt;</h3>
-            <p>la balise p permet de faire des paragraphes, pour écrire ce texte j'utilise une balise p.</p>
-            <h3>&lt;img&gt;</h3>
-            <p>la balise img sert à insérer une image dans un document. On rentre dans le code img src="le lien de l'image"</p>
+            <p>La balise p permet de faire des paragraphes, pour écrire ce texte j'utilise une balise p.</p>
+            <h3>&lt;h1&gt; (h2, h3... h6)</h3>
+            <p>Pour écrire des titre, il suffit d'utiliser une balise h[1;6]. Plus le chiffre qui suit "h" est petite plus le titre est important.</p>
             <pre class="code html-language">
-<!-- /!\ATTENTION, LE CODE QUI VA SUIVRE EST TOUT BONNEMENT DEGUEULASSE /!\-->
 <span class="balise">&lt;</span><span class="balise-text">html</span><span class="balise">&gt;</span>
     <span class="balise">&lt;</span><span class="balise-text">header</span><span class="balise">&gt;</span>
         <span class="balise">&lt;</span><span class="balise-text">p</span><span class="balise">&gt;</span>MA PAGE WEB<span class="balise">&lt;/</span><span class="balise-text">p</span><span class="balise">&gt;</span>
@@ -140,6 +141,20 @@
     <span class="balise">&lt;</span><span class="balise-text">footer</span><span class="balise">&gt;</span>
         <span class="balise">&lt;</span><span class="balise-text">p</span><span class="balise">&gt;</span>&copy; 2022 Mineria<span class="balise">&lt;/</span><span class="balise-text">p</span><span class="balise">&gt;</span>
     <span class="balise">&lt;/</span><span class="balise-text">footer</span><span class="balise">&gt;</span>
+<span class="balise">&lt;/</span><span class="balise-text">html</span><span class="balise">&gt;</span>
+            </pre>
+            <h3>&lt;a&gt;</h3>
+            <p>La balise a sert à insérer un lien et peut contenir tout type de contenu, texte (&lt;p&gt;) ou image (&lt;img&gt;). Lorsque l'utilisateur cliquera sur cet élément, il sera redirigé vers le lien en question. Pour indiquer le lien vers lequel l'utilisateur sera redirigé, il faut utiliser <b>l'attribut href</b>.</p>
+            <h3>&lt;img&gt;</h3>
+            <p>Cette balise sert à insérer une image dans un document. On entre en attribut le chemin d'accès de l'image grâce à <b>l'attribut src</b> (Voir ci-dessous).</p>
+            <pre class="code html-language">
+<span class="balise">&lt;</span><span class="balise-text">html</span><span class="balise">&gt;</span>
+    <span class="balise">&lt;</span><span class="balise-text">body</span><span class="balise">&gt;</span>
+        <span class="comment">&lt;!-- Une image redirigeant vers un lien --&gt;</span>
+        <span class="balise">&lt;</span><span class="balise-text">a</span><span class="balise-attribute"> href=</span><span class="balise-attribute-value">"https://site-externe.com"</span><span class="balise">&gt;</span>
+            <span class="balise">&lt;</span><span class="balise-text">img</span><span class="balise-attribute"> src=</span><span class="balise-attribute-value">"./img/votre-image.png"</span><span class="balise"> /&gt;</span>
+        <span class="balise">&lt;/</span><span class="balise-text">a</span><span class="balise">&gt;</span>
+    <span class="balise">&lt;/</span><span class="balise-text">body</span><span class="balise">&gt;</span>
 <span class="balise">&lt;/</span><span class="balise-text">html</span><span class="balise">&gt;</span>
             </pre>
         </div>

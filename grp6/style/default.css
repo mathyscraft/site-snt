@@ -217,7 +217,6 @@ blockquote, small {
 .code {
     display: inline-block;
     width: 50%;
-    overflow: scroll;
     background-color: #262626;
     margin: 1px;
     padding: 3px;
@@ -237,10 +236,12 @@ blockquote, small {
 
 .html-language {
     border-left: 8px solid #ff4800;
+    overflow: scroll;
 }
 
 .css-language {
     border-left: 8px solid #008cba;
+    overflow: scroll;
 }
 
 .code .balise {
@@ -257,6 +258,10 @@ blockquote, small {
 
 .code .balise-attribute-value {
     color: salmon;
+}
+
+.code .comment {
+    color: green;
 }
 
 .quotes {
@@ -310,6 +315,7 @@ blockquote > small {
     #hyperlink-video img {
         display: block;
         margin: auto;
+        margin-top: 30px;
         width: 150px;
         height: 100%;
     }
