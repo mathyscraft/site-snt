@@ -264,6 +264,10 @@ blockquote, small {
     color: green;
 }
 
+.code .css-id {
+    color: orange;
+}
+
 .quotes {
     margin: 30px 5px;
     display: flex;
@@ -322,5 +326,42 @@ blockquote > small {
     #hyperlink-video iframe {
         margin: auto;
         width: 70%
+    }
+}
+
+.css-content {
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.warning {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.warning-items {
+    margin: 0 5%;
+    width: 200px; 
+    padding: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+    border-radius: 15px;
+    background-color: #f8d7da;
+    border: solid 2px #a51725;
+    color: #721c24;
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 930px){
+    .warning {
+        display: block;
+        margin: auto;
+    }
+    .warning-items {
+        margin-top: 20px;
+        width: 80%;
+        padding: 5px;
     }
 }

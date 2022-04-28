@@ -61,6 +61,48 @@
         </p>
         <img id="css-logo" src="img/css-3-logo.png">
     </div>
+    <div class="css-content">
+        <h2>Class et ID :</h2>
+        <p>On peut donner à un élément html des attributs, notamment des class et des id. Ces derniers permettent de faire le lien entre le code html et le fichier css.</p>
+        <p>
+            Par exemple :
+            <span class="code" style="width: auto;" >
+                <span class="balise">&lt;</span><span class="balise-text">p</span> <span class="balise-attribute">id=</span><span class="balise-attribute-value">"ceci-est-mon-id"</span> <span class="balise-attribute">class=</span><span class="balise-attribute-value">"ceci-est-ma-classe"</span><span class="balise">&gt;</span>
+                Texte
+                <span class="balise">&lt;/</span><span class="balise-text">p</span><span class="balise">&gt;</span>
+            </span>
+        </p>
+        <div class="warning">
+            <div class="warning-items">
+               <p>/!\ Le nom d'une classe ou d'un id ne peut pas contenir d'espaces ! Il faut les remplacer par des tirets.</p> 
+            </div>
+            <div class="warning-items">
+                <p>/!\ Un id ne peut être utiliser qu'une seule fois contrairement à une classe</p>
+            </div>
+            <div class="warning-items">
+                <p>/!\ Un élémentt peut avoir plusieurs classes qu'il suffit de séparer par un espace</p>
+            </div>
+        </div>
+        <p>Il suffit ensuite de configurer les classes et id dans un fichier .css mentionné dans <a href="html.html#head">l'élément head</a> de votre page html de la manière suivante :</p>
+        <pre class="code html-language">
+<span class="balise">&lt;</span><span class="balise-text">head</span><span class="balise">&gt;</span>
+    <span class="balise">&lt;</span><span class="balise-text">title</span><span class="balise">&gt;</span>Exemple<span class="balise">&lt;/</span><span class="balise-text">title</span><span class="balise">&gt;</span>
+    <span class="balise">&lt;</span><span class="balise-text">link</span> <span class="balise-attribute">rel=</span><span class="balise-attribute-value">"stylesheet"</span> <span class="balise-attribute">href=</span><span class="balise-attribute-value">"exemple.css"</span> <span class="balise">&gt;</span>
+<span class="balise">&lt;/</span><span class="balise-text">head</span><span class="balise">&gt;</span>
+        </pre>
+        <p>Pour définir vos classes et id dans le fichier css et mettant un point devant les class et un hashtag devant les id puis indiquer entre accolades vos propriétés.</p>
+        <pre class="code css-language">
+<span class="css-id">.ceci-est-ma-classe</span> {
+    <span class="comment">/*Vous mettrez ici vos propriétés css*/</span>
+}
+
+<span class="css-id">#ceci-est-mon-id</span> {
+    <span class="comment">/*Vous mettrez ici vos propriétés css*/</span>
+}
+        </pre>
+        <br><br>
+        <h2>Quelques exemples de propriétés :</h2>
+    </div>
     <footer class="footer">
         <ul>
             <hr>
