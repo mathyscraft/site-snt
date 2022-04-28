@@ -260,13 +260,7 @@ blockquote, small {
     color: dodgerblue;
 }
 
-.code .attribute {
-    color: turquoise;
-}
 
-.code .attribute-value {
-    color: salmon;
-}
 
 .code .comment {
     color: green;
