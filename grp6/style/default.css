@@ -19,6 +19,14 @@ h3 {
     margin-bottom: -25px;
 }
 
+h4 {
+    font-family: 'Oswald','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+    width: fit-content;
+    border-bottom: solid 2px black;
+}
+
 p {
     font-family: 'Oswald','Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -252,11 +260,11 @@ blockquote, small {
     color: dodgerblue;
 }
 
-.code .balise-attribute {
+.code .attribute {
     color: turquoise;
 }
 
-.code .balise-attribute-value {
+.code .attribute-value {
     color: salmon;
 }
 
@@ -363,5 +371,11 @@ blockquote > small {
         margin-top: 20px;
         width: 80%;
         padding: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .schema-css {
+        width: 100%;
     }
 }

@@ -67,7 +67,7 @@
         <p>
             Par exemple :
             <span class="code" style="width: auto;" >
-                <span class="balise">&lt;</span><span class="balise-text">p</span> <span class="balise-attribute">id=</span><span class="balise-attribute-value">"ceci-est-mon-id"</span> <span class="balise-attribute">class=</span><span class="balise-attribute-value">"ceci-est-ma-classe"</span><span class="balise">&gt;</span>
+                <span class="balise">&lt;</span><span class="balise-text">p</span> <span class="attribute">id=</span><span class="attribute-value">"ceci-est-mon-id"</span> <span class="attribute">class=</span><span class="attribute-value">"ceci-est-ma-classe"</span><span class="balise">&gt;</span>
                 Texte
                 <span class="balise">&lt;/</span><span class="balise-text">p</span><span class="balise">&gt;</span>
             </span>
@@ -87,7 +87,7 @@
         <pre class="code html-language">
 <span class="balise">&lt;</span><span class="balise-text">head</span><span class="balise">&gt;</span>
     <span class="balise">&lt;</span><span class="balise-text">title</span><span class="balise">&gt;</span>Exemple<span class="balise">&lt;/</span><span class="balise-text">title</span><span class="balise">&gt;</span>
-    <span class="balise">&lt;</span><span class="balise-text">link</span> <span class="balise-attribute">rel=</span><span class="balise-attribute-value">"stylesheet"</span> <span class="balise-attribute">href=</span><span class="balise-attribute-value">"exemple.css"</span> <span class="balise">&gt;</span>
+    <span class="balise">&lt;</span><span class="balise-text">link</span> <span class="attribute">rel=</span><span class="attribute-value">"stylesheet"</span> <span class="attribute">href=</span><span class="attribute-value">"exemple.css"</span> <span class="balise">&gt;</span>
 <span class="balise">&lt;/</span><span class="balise-text">head</span><span class="balise">&gt;</span>
         </pre>
         <p>Pour définir vos classes et id dans le fichier css et mettant un point devant les class et un hashtag devant les id puis indiquer entre accolades vos propriétés.</p>
@@ -102,6 +102,35 @@
         </pre>
         <br><br>
         <h2>Quelques exemples de propriétés :</h2>
+        <h3>width et height :</h3>
+        <p>Permettent respectivement de donner une largeur et une hauteur à un élément. Ils peuvent être donnés en pixel (px), en millimètres (mm), en pourcentage (%)... </p>
+        <h3>font-size :</h3>
+        <p>La propriété font-size permet de définir la taille de la police d'écriture utilisée pour un texte. On peut définir la taille en pixel par exemple.</p>
+        <h3>color :</h3>
+        <p>Color définit la couleur d'un texte. La couleur peut être indiquée en hexadécimal, en rgb ou encore grâce à certaines mots clef (Ex : red ; blue ; darkgreen...).</p>
+        <h3>background-color :</h3>
+        <p>Cette propriété permet de donner à l'arrière plan une couleur de la même manière que pour du texte.</p>
+        <h3>margin :</h3>
+        <p>La propriété margin permet de definir des marges sur les côtés de l'élements permettant aux autres éléments d'en être éloigné. A noter qu'il existe aussi les variante margin-top, margin-left etc.</p>
+        <h3>padding :</h3>
+        <p>Padding permet quant à lui d'établir un écart entre l'interieur de l'élément et les bordures. (Voir exemple ci-dessous)</p>
+        <img class="schema-css" src="./img/schema_css.png" alt="schema paddding/margin" ><br>
+        <p>Un texte avec la class "ma-classe" possédant une marge exterieure de 10px, une marge interieure de 5px, une largeur de 200 pixels, dont la police est de couleur blanche et de taille 15px le tout possédant un arrière plan rouge :</p>
+        <pre class="code css-language">
+<span class="css-id">.ma-classe</span> {
+    <span class="attribute">padding</span>: <span class="attribute-value">5px</span>;
+    <span class="attribute">margin</span>: <span class="attribute-value">10px</span>;
+    <span class="attribute">width</span>: <span class="attribute-value">200px</span>;
+    <span class="attribute">color</span>: <span class="attribute-value">white</span>;
+    <span class="attribute">font-size</span>: <span class="attribute-value">15px</span>;
+    <span class="attribute">background-color</span>: <span class="attribute-value">red</span>;
+}
+        </pre>
+        <h4>Résultat :</h4>
+        <img class="schema-css" src="./img/schema_result.png" alt="schema paddding/margin" >
+        <div class="warning-items" style="width: 80%; margin-top: 20px;">
+            <p>/!\ Ceci n'est qu'un court très extrait des propriétés disponibles en css, pour plus d'information, vous pouvez consulter la documentation <a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs</a> qui est très complète et très claire.</p> 
+         </div>
     </div>
     <footer class="footer">
         <ul>
